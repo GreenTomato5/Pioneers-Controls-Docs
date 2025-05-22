@@ -3,7 +3,7 @@ State Based Timed Robot
 
 .. note:: There are many ways to write state machines, this is just one of them.
 
-Our team interestingly does not use the standard 'WPILIB Command Based programming architecture<https://frcdocs.wpi.edu/en/2020/docs/software/commandbased/what-is-command-based.html>'_. It is very important that
+Our team interestingly does not use the standard `WPILIB Command Based programming architecture <https://frcdocs.wpi.edu/en/2020/docs/software/commandbased/what-is-command-based.html>`_. It is very important that
 everyone understands exactly why we do this and that both approaches are acceptable.
 
 Why Not Commands?
@@ -43,20 +43,20 @@ How Does our Abstraction Work?
 -------------
 
 Once we know the mechanisms that will be on our robot, before programming we make sure to outline each one of our states and their transitions.
-We use 'drawIO <https://drawio.com/>'_ to create a state machine diagram that outlines the states and transitions of our robot. 
+We use `drawIO <https://drawio.com/>`_ to create a state machine diagram that outlines the states and transitions of our robot. 
 During training students usually complete one such diagram to familiarize themselves with the process, here are a couple of examples:
 
-.. figure:: /2025StateDiagram.png
+.. figure:: /pioneersLib/2025StateDiagram.png
    :alt: 2025 State Machine
    :width: 600px
    :align: center
 
-.. figure:: /2024Progathon.png
+.. figure:: /pioneersLib/2024Progathon.png
    :alt: 2024 Progathon State Machine
    :width: 600px
    :align: center
 
-.. figure:: /2024Season.png
+.. figure:: /pioneersLib/2024Season.png
     :alt: 2024 State Machine
     :width: 600px
     :align: center
