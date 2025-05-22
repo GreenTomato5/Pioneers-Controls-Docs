@@ -11,10 +11,3 @@ new to the controls subteam can easily pick it up.
 
    Team members are free to contribute to this documentation. Our libraries should change and these docs should reflect that!
 
-Contents
---------
-
-.. toctree::
-
-Team Library
-Tools
