@@ -24,10 +24,3 @@ new to the controls subteam can easily pick it up.
    tools/logging
    tools/simultation
    
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
