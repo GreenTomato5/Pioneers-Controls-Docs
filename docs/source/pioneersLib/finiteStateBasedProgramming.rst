@@ -3,10 +3,14 @@ State Based Timed Robot
 
 .. note:: There are many ways to write state machines, this is just one of them.
 
-Our team interestingly does not use the standard WPILIB Command Based programming architecture (link). It is very important that
+Our team interestingly does not use the standard 'WPILIB Command Based programming architecture<https://frcdocs.wpi.edu/en/2020/docs/software/commandbased/what-is-command-based.html>'_. It is very important that
 everyone understands exactly why we do this and that both approaches are acceptable.
 
+Why Not Commands?
+-------------
+
 There are two main goals whenever programming a robot:
+
 1. Make the robot do what you want it to do, have a functional machine
 2. Make the code easy to read and understand, have a maintainable codebase
 
@@ -34,3 +38,36 @@ they are forced to use an established rigid framework. Because of the knowledge 
 library for composing such state machines has been sustainable and easy to do. Students can easily edit the library and modify it to
 their liking. We don't have issues with not intimatley understanding issues related to the framework used to run our robot because we made the
 framework ourselves and it is much less verbose and rigid than the command based framework. 
+
+How Does our Abstraction Work?
+-------------
+
+Once we know the mechanisms that will be on our robot, before programming we make sure to outline each one of our states and their transitions.
+We use 'drawIO <https://drawio.com/>'_ to create a state machine diagram that outlines the states and transitions of our robot. 
+During training students usually complete one such diagram to familiarize themselves with the process, here are a couple of examples:
+
+.. figure:: /2025StateDiagram.png
+   :alt: 2025 State Machine
+   :width: 600px
+   :align: center
+
+.. figure:: /2024Progathon.png
+   :alt: 2024 Progathon State Machine
+   :width: 600px
+   :align: center
+
+.. figure:: /2024Season.png
+    :alt: 2024 State Machine
+    :width: 600px
+    :align: center
+
+Each larger box represents a subsystem and inside each subsystem are the states. If the subsystem is self-managing or manages other subsystems
+the transitions for that subsystem are shown. You may notice that each diagram includes some sort of "Manager". This is key to how we write state machines
+essentially a given subsystem can be "rogue" meaning it manages itself or "managed" meaning it is governed by the Manager subsystem. By controlling
+multiple subsystems with a manager we can easily create a state machine where there are no conflcits between subsystems & it prevents having to dependency inject every subsystem
+into every other subsystem.
+
+.. note:: Subsystems in this framework refer to entire portions of the robot that acomplish a specific task, including software specific tasks not just degrees of freedom on the robot.
+
+As you will see later on in the team lib docs, these states and transitions are represented in code with an enum that defines the state for each subsystem
+and inhereted functions that allow each subsystem to register a state transition. 
