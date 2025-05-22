@@ -11,3 +11,13 @@ new to the controls subteam can easily pick it up.
 
    Team members are free to contribute to this documentation. Our libraries should change and these docs should reflect that!
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   preRequisites
+   pioneersLib/index
+   swerve/whatIsSwerve
+   tools/index
+   vision/localization.rst
+   
