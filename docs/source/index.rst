@@ -18,9 +18,6 @@ new to the controls subteam can easily pick it up.
    preRequisites
    pioneersLib/index
    swerve/whatIsSwerve
-   tools/autonomous/generalApproach
-   tools/dashboards/whatIsNT
-   tools/logging/whyDoWeLog
-   tools/simulation/index
+   tools/index
    vision/localization.rst
    
