@@ -16,11 +16,5 @@ new to the controls subteam can easily pick it up.
    :caption: Contents:
 
    preRequisites
-   pioneersLib/whyHaveATeamLib
-   swerve/whatIsSwerve
-   tools/autonomous/generalApproach
-   tools/dashboards/whatIsNT
-   tools/logging/whyDoWeLog
-   tools/simulation/index
-   tools/vision/localization
+   pioneersLib/index
    
