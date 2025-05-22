@@ -1,22 +1,19 @@
-Welcome to Lumache's documentation!
+Welcome to FRC 7525's Internal Docs!
 ===================================
-Hi Chat
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+7525 makes use of various libraries, both vendor provided and internal during the on-season.
+In turn there is a lot of "tribal knowledge"-knowledge that can only be aquired through epirience on the team.
+This documentation aims to limit such tribal knowledge, and condense what the team has done software wise so anyone
+new to the controls subteam can easily pick it up.
+
 
 .. note::
 
-   This project is under active development.
+   Team members are free to contribute to this documentation. Our libraries should change and these docs should reflect that!
 
 Contents
 --------
 
 .. toctree::
-
-   usage
-   api
+Team Library
+Tools
