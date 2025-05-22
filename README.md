@@ -1,1 +1,1 @@
-# Internal Documentation for FRC Tea 7525
+# Internal Documentation for FRC Team 7525
