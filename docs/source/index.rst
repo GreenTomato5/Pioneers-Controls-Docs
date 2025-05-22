@@ -15,5 +15,6 @@ Contents
 --------
 
 .. toctree::
+
 Team Library
 Tools
