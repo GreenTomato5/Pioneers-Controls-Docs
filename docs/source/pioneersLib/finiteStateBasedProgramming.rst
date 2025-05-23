@@ -3,7 +3,7 @@ State Based Timed Robot
 
 .. note:: There are many ways to write state machines, this is just one of them.
 
-Our team interestingly does not use the standard `WPILIB Command Based programming architecture <https://frcdocs.wpi.edu/en/2020/docs/software/commandbased/what-is-command-based.html>`_. It is very important that
+Our team interestingly does not use the standard `WPILIB Command Based programming architecture <https://frcdocs.wpi.edu/en/2020/docs/software/commandbased/what-is-command-based.html>`_ and instead uses a custom state machine architecture. It is very important that
 everyone understands exactly why we do this and that both approaches are acceptable.
 
 Why Not Commands?
@@ -50,16 +50,21 @@ During training students usually complete one such diagram to familiarize themse
    :alt: 2025 State Machine
    :width: 600px
    :align: center
+   This diagram shows the layout of our robot's subsystems in 2025.
 
 .. figure:: /pioneersLib/2024Progathon.png
    :alt: 2024 Progathon State Machine
    :width: 600px
    :align: center
+   This diagram shows the layout of our robot's subsystems for a summer progathon. Special care was taken to structure the indexer subsystem because it needed some autonomy.
 
 .. figure:: /pioneersLib/2024Season.png
     :alt: 2024 State Machine
     :width: 600px
     :align: center
+   This diagram shows the layout of our robot's subsystems in 2024.
+
+
 
 Each larger box represents a subsystem and inside each subsystem are the states. If the subsystem is self-managing or manages other subsystems
 the transitions for that subsystem are shown. You may notice that each diagram includes some sort of "Manager". This is key to how we write state machines
