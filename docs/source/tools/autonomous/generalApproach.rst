@@ -15,7 +15,7 @@ Our autonomous code is the *only* place in our entire codebase where we utilize 
 Graphical Path Generation: PathPlanner and Choreo
 -------------------------------------------------
 
-To simplify the creation of complex driving paths, we leverage powerful GUI-based tools like `PathPlanner <PathPlanner>`_ and `Choreo <Choreo>`_. These tools allow us to:
+To simplify the creation of complex driving paths, we leverage powerful GUI-based tools like `PathPlanner <pathPlanner>`_ and `Choreo <choreo>`_. These tools allow us to:
 
 * **Visually Draw Paths:** Instead of manually calculating trajectories and waypoints in code, we can graphically draw out the desired paths on a field diagram. This greatly reduces development time and allows for precise path tuning.
 * **Combine Paths with Actions:** Both PathPlanner and Choreo allow us to integrate custom actions (our WPILib Commands) at specific points along the generated path. For example, we can specify that the robot should deploy its intake at a certain waypoint, or shoot a note when it reaches a specific position. This allows us to build complete autonomous routines that combine movement with manipulation.
@@ -32,6 +32,9 @@ Recently, we've begun experimenting with `Repulsor <Repulsor>`_. as an alternati
 
 .. note::
    It is technically possible to create autonomous routines using a timer, where the robot performs different actions at specific time intervals (e.g., "drive forward for 2 seconds, then turn left for 1 second"). However, this approach is **highly discouraged** and **should not be done**. Timer-based autos are incredibly fragile, susceptible to minor robot variations, battery voltage changes, and field inconsistencies, leading to unreliable and inconsistent performance. Our preferred methods using commands, path generation tools, and Repulsor provide far superior robustness, accuracy, and maintainability.
+
+Tools
+-----------------
 
 .. toctree::
    :maxdepth: 1
