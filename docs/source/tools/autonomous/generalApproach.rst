@@ -1,7 +1,11 @@
-Autonomous Approach
+Autonomous
 ===================
 
+Our autonomous approach
+-----------------------------
+
 The autonomous period is a crucial part of every FRC match. During this period, robots operate without any driver input, executing pre-programmed routines to score points. This period can significantly impact a team's performance.
+Our autonomous code is designed to be modular and flexible, allowing us to adapt to different game strategies and conditions. We utilize a combination of WPILib commands, graphical path generation tools, and coordinate-based navigation to create robust and efficient autonomous routines.
 
 WPILib Commands in Autonomous
 -----------------------------
@@ -15,7 +19,7 @@ Our autonomous code is the *only* place in our entire codebase where we utilize 
 Graphical Path Generation: PathPlanner and Choreo
 -------------------------------------------------
 
-To simplify the creation of complex driving paths, we leverage powerful GUI-based tools like `PathPlanner <pathPlanner>`_ and `Choreo <choreo>`_. These tools allow us to:
+To simplify the creation of complex driving paths, we leverage powerful GUI-based tools like `PathPlanner <pathPlanner.html>`_ and `Choreo <choreo.html>`_. These tools allow us to:
 
 * **Visually Draw Paths:** Instead of manually calculating trajectories and waypoints in code, we can graphically draw out the desired paths on a field diagram. This greatly reduces development time and allows for precise path tuning.
 * **Combine Paths with Actions:** Both PathPlanner and Choreo allow us to integrate custom actions (our WPILib Commands) at specific points along the generated path. For example, we can specify that the robot should deploy its intake at a certain waypoint, or shoot a note when it reaches a specific position. This allows us to build complete autonomous routines that combine movement with manipulation.
@@ -24,7 +28,7 @@ To simplify the creation of complex driving paths, we leverage powerful GUI-base
 Repulsor: Coordinate-Based Autonomous
 -------------------------------------
 
-Recently, we've begun experimenting with `Repulsor <Repulsor>`_. as an alternative method for autonomous travel. Repulsor offers significant advantages in terms of flexibility and rapid auto generation:
+Recently, we've begun experimenting with `Repulsor <repulsor.html>`_. as an alternative method for autonomous travel. Repulsor offers significant advantages in terms of flexibility and rapid auto generation:
 
 * **Greater Flexibility:** Unlike pre-drawn paths, Repulsor allows us to define autonomous movements simply by providing target coordinates. This is incredibly powerful for scenarios where the exact path might vary or where on-the-fly adjustments are needed.
 * **Faster Auto Generation:** Instead of drawing and refining paths, we can generate autonomous routines much more quickly by simply specifying a sequence of coordinates the robot needs to reach. This is particularly useful for adapting to different game strategies.
