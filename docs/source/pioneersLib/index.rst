@@ -12,11 +12,11 @@ The library now contains useful utility files, our subsystem base classes, and s
 .. note:: this library draws a lot on the work of other teams, if you add something to the library please give them credit!
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    finiteStateBasedProgramming
-   subsystem
    triggers
+   subsystem
    exampleSubsystem
    repulsor
    misc
