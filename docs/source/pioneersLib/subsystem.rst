@@ -1,4 +1,4 @@
-Subsystem and Subsystem State abstractions
+Subsystem and Subsystem State Abstractions
 ========================================================
 
 All discussed file can be found `here <https://github.com/FRC-7525/PioneersLib>`_. 

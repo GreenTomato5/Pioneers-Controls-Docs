@@ -14,6 +14,7 @@ State transition triggers are used to define when a state transition should occu
 triggers with a starting state that is the same as the current active state are checked in the periodic loop. 
 
 .. code-block:: java
+
     public class Trigger<StateType extends SubsystemStates> {
         BooleanSupplier supplier;
         StateType state;
@@ -41,6 +42,7 @@ Runnable Triggers
 Runnable triggers have two rather simple arguments, a runnable to be executed and a BooleanSupplier that is used to check if the runnable should be executed.
 
 .. code-block:: java 
+
     public class RunnableTrigger {
         BooleanSupplier supplier;
         Runnable runnable;
@@ -65,6 +67,7 @@ cases where we have many inputs that need to be check. For example in order to c
 runnable triggers such as:
 
 .. code-block:: java
+
     addRunnableTrigger(() -> {
         // Do something
     }, () -> buttonBoard.getButton(0));
@@ -79,6 +82,7 @@ runnable triggers such as:
 When compared to
 
 .. code-block:: java
+    
     if (buttonBoard.getButton(0)) {
         // Do something
     } else if (buttonBoard.getButton(1)) {
