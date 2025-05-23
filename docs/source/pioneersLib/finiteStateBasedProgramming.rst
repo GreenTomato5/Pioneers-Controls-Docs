@@ -50,19 +50,19 @@ During training students usually complete one such diagram to familiarize themse
    :alt: 2025 State Machine
    :width: 600px
    :align: center
-   This diagram shows the layout of our robot's subsystems in 2025.
+This diagram shows the layout of our robot's subsystems in 2025.
 
 .. figure:: /pioneersLib/2024Progathon.png
    :alt: 2024 Progathon State Machine
    :width: 600px
    :align: center
-   This diagram shows the layout of our robot's subsystems for a summer progathon. Special care was taken to structure the indexer subsystem because it needed some autonomy.
+This diagram shows the layout of our robot's subsystems for a summer progathon. Special care was taken to structure the indexer subsystem because it needed some autonomy.
 
 .. figure:: /pioneersLib/2024Season.png
     :alt: 2024 State Machine
     :width: 600px
     :align: center
-   This diagram shows the layout of our robot's subsystems in 2024.
+This diagram shows the layout of our robot's subsystems in 2024.
 
 
 

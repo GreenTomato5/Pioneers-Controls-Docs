@@ -14,6 +14,7 @@ as it requires a recompile to change the values.
 Multiple of these classes exist most are simple records like this:
 
 .. code-block:: java
+    
     public record FFCoefficients(
             double kS,
             double kV,
@@ -24,6 +25,7 @@ Multiple of these classes exist most are simple records like this:
 Recently however, we have shifted away from using these control coefficients and started using suppliers to differentiate between real and simulated values:
 
 .. code-block:: java
+    
     public static final Supplier<PIDController> PID_CONTROLLER = () ->
 		switch (ROBOT_MODE) {
 			case REAL -> new PIDController(5, 0, 0);
@@ -42,6 +44,7 @@ log data during matches so if you have any significant loop overuns you can easi
 In order to trace a function simply do:
 
 .. code-block:: java
+
     Tracer.traceFunc("My Function", myFunction());
 
 The functions time will automatically be logged with AdvantageKit and put to NT.
