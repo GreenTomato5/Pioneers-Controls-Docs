@@ -1,5 +1,4 @@
-Tools Overview
+Prerequisites and Resources
 ==============
 
-.. toctree::
-   :maxdepth: 1
+lps, wpilib docs, discord in here prob

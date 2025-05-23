@@ -11,6 +11,9 @@ The library now contains useful utility files, our subsystem base classes, and s
 
 .. note:: this library draws a lot on the work of other teams, if you add something to the library please give them credit!
 
+Table of Contents
+------------------
+
 .. toctree::
    :maxdepth: 2
 
