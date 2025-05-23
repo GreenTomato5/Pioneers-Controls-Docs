@@ -12,6 +12,7 @@ Subsystem
 Here is the first portion of the Subsystem abstract class, it lays out the needed variables for storage, and defines a subsystem in its constructor.
 
 .. code-block:: java
+
     public abstract class Subsystem<StateType extends SubsystemStates> extends SubsystemBase {
 
 	private Map<StateType, ArrayList<Trigger<StateType>>> triggerMap = new HashMap<>();
@@ -45,6 +46,7 @@ when entering or exiting states, there are also "state init" and "state exit" fu
 resetting PID controllers, booleans, etc.
 
 .. code-block:: java
+
     // State operation
 	public void periodic() {
 		// Commented out bc bad code
@@ -109,6 +111,7 @@ resetting PID controllers, booleans, etc.
 There are also various utility functions in the subsystem class. They allow you to get SysID commands, time you've been in the current active state, the current state, and more:
 
 .. code-block:: java
+
     public StateType getState() {
 		return state;
 	}
@@ -151,6 +154,7 @@ Subsystem States
 In order to define the subsystem state type that each subsystem requires, there is a specific interface that each subsystem state enum must inherit from. It is very short and simple:
 
 .. code-block:: java
+    
     public interface SubsystemStates {
         default String getStateString() {
             throw new UnsupportedOperationException(
