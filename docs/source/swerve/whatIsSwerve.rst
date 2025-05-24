@@ -25,6 +25,9 @@ Because almost all of these swerve libraries fundamentally rely on the same WPIL
 (at least not game changing ones). The main difference come from maintainability, ease of use, and documentation which some libraries do much better\
 than others.
 
+Existing Solutions
+-------------
+
 .. toctree::
    :maxdepth: 1
 
