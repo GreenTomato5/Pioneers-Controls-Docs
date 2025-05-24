@@ -29,9 +29,11 @@ Existing Solutions
 -------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    YAGSL
    advantageKitTemplate
    CTRESwerve
    customSwerve
+   whatShouldYouUse
+
