@@ -11,8 +11,7 @@ Resources
 
 For learning these prerequisites there are a variety of resources:
 
-- The `WPILIB docs <https://docs.wpilib.org/en/stable/docs/zero-to-robot/introduction.html>`_ are very comprehensive and 
-will effectivley teach you how to program a robot given you have a understanding of Java or Cpp.
+- The `WPILIB docs <https://docs.wpilib.org/en/stable/docs/zero-to-robot/introduction.html>`_ are very comprehensive and will effectivley teach you how to program a robot given you have a understanding of Java or Cpp.
 
 - For questions regarding WPILIB, and FRC programming in general the `FRC Discord <https://discord.gg/frc>`_ is a great place to ask questions and get help. There are acive members from nearly every vendor, the WPILIB developers, and lots of expirienced students. Don't be afraid to ask questions! You will certainly run into people will very strong opinions but most people are very helpful and willing to help you learn.
 

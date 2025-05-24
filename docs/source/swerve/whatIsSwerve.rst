@@ -35,4 +35,3 @@ Existing Solutions
    advantageKitTemplate
    CTRESwerve
    customSwerve
-   whatShouldYouUse
