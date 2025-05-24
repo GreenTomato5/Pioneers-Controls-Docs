@@ -8,6 +8,9 @@ the vendors that make swerve modules. There are also however other methods that 
 benefits that come with writing your own swerve! In this portion of the docs we will explore different swerve drive libraries, what has been effctive for us, and what
 is probably the "best" for the team to continue using.
 
+Lots of the information surrounding these swerve libraries was obtained in the 2025 offseason. Our team did a custom swerve write and tested
+3 different swerve libraries before settling on one final solution.
+
 .. note:: The benefits of specifically CTRE swerve and their ecosystem (locks you into their products) wont be as strong once Systemcore comes out because of its onboard CAN FD bus and higher processing capabilities (will likley make the CANIVORE irrelevant). 
 
 What Does WPILIB Provide?
@@ -23,11 +26,10 @@ Because almost all of these swerve libraries fundamentally rely on the same WPIL
 than others.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
+   YAGSL
    advantageKitTemplate
    CTRESwerve
    customSwerve
-   whatIsSwerve
    whatShouldYouUse
-   YAGSL
