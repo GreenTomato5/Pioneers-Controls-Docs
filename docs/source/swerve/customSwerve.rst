@@ -29,6 +29,7 @@ swerve as we had programmed the full library!
 To hammer in the point about over abstracting, here's what an implementation of the library looks:
 
 .. code-block:: java
+    
     public class Drive extends Subsystem<DriveStates> {
     private SwerveDrive drive;
     
