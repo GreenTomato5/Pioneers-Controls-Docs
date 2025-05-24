@@ -3,7 +3,7 @@ CTRE Swerve API
 
 .. note:: CTREs benefit of having a GUI configuration menu and having CANIVORE 250hz odometry with timesync will likley be obsolete once Systemcore comes out and YAGSL develops their GUI!
 
-The CTRE swerve API has been the standard for lots of top teams including 2910, 254, and many others. It is extremley well documented, structures, and easy to use.
+The `CTRE swerve API <https://v6.docs.ctr-electronics.com/en/latest/docs/tuner/tuner-swerve/index.html>`_ has been the standard for lots of top teams including 2910, 254, and many others. It is extremley well documented, structures, and easy to use.
 There is an interactive GUI that steps the user through configuring their swerve drive and accuratley determining physical constants. 
 
 But with eveything there must be a cost. The cost of using the CTRE swerve API is pretty high to say the least. The API software locks many
