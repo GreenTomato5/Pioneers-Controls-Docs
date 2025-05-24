@@ -22,6 +22,15 @@ First we need an outline of the subsystem states, what the shooter can do. In th
         this.velocityRPM = velocityRPM;
     }
 
+    @Override
+    public String getStateString() {
+        return stateString;
+    }
+
+    public double getTargetVelocityRPM() {
+        return velocityRPM;
+    }
+
 Idle will represent the state of the robot when the shooter is not running, and it can be assumed that instantly entering the SHOOTING state
 will properly score a gamepiece for the sake of simplicity.
 
@@ -50,9 +59,10 @@ Next we need to create the subsystem class itself:
 
         @Override
         public void runState() {
-            double targetVelocity = getState().velocityRPM;
+            double targetVelocity = getState().getVelocityRPM();
             double output = pidController.calculate(motor.getSelectedSensorVelocity(), targetVelocity);
             motor.set(ControlMode.Velocity, output);
+            Logger.recordOutput("Shooter/State", getState().getStateString());
         }   
 
         @Override
