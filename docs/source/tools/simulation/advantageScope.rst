@@ -1,4 +1,4 @@
-Advantage Advantage Scope
+Advantage Scope
 ===============
 
 Advantage scope is a very powerful simulation tool that allows you to visualize mechanisms
