@@ -4,7 +4,7 @@ Conceptual Breakdown
 At its most basic form, the repulsor field calculates a set of forces applied by obstacles. 
 Most obstacles use the same formula for calculating forces, with the exception of the guided obstacle.
 
-.. image:: /pioneersLib/repulsorFormula.png
+.. image:: repulsorFormula.png
    :alt: Formula for force applied
    :align: center
 

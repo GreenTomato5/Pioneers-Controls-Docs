@@ -6,7 +6,7 @@ In order for the robot to have consistent and accurate odometry.
 When given a robot position, a goal position, and a list of obstacles,
 we can calculate a vector field that essentially guides the robot to its target position while avoiding obstacles.
 
-.. figure:: /pioneersLib/arrows.png
+.. figure:: arrows.png
    :alt: Arrows representing the repulsor field
    :width: 600px
    :align: center
