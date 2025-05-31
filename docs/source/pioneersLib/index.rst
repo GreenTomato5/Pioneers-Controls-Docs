@@ -20,5 +20,5 @@ The library now contains useful utility files, our subsystem base classes, and s
    triggers
    subsystem
    exampleSubsystem
-   repulsor
+   Repulsor\repulsor
    misc
