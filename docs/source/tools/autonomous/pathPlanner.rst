@@ -33,11 +33,9 @@ Getting started
 4. **Using in the code**:
     a. Your paths and autos will be saved as json files in the deploy directory.
     b. In your robot code, you can use the `PathPlanner` library to load and execute paths and/or autos.
-    .. role:: hover(title="In Java, the static keyword indicates that the member belongs to the class rather than to any specific instance. This means you can access static members without creating an object of the class. For example, a static method or variable can be accessed using the class name directly.")
-    
     c. AutoBuilder is a :hover:`static` class that provides methods to load and execute paths.
     d. It needs to be configured within your robot code, usually in the Drive subsystems constructor.
-    ... code-block:: java
+    .. code-block:: java
     
         RobotConfig config;
         try {

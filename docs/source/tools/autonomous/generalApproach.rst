@@ -35,7 +35,7 @@ Recently, we've begun experimenting with `Repulsor <repulsor.html>`_. as an alte
 .. note::
    It is technically possible to create autonomous routines using a timer, where the robot performs different actions at specific time intervals (e.g., "drive forward for 2 seconds, then turn left for 1 second"). However, this approach is **highly discouraged** and **should not be done**.
 
----------
+---------------
 
 .. toctree::
    :maxdepth: 1
