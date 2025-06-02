@@ -17,5 +17,3 @@ How to Use WPILib simGUI
 This simulation will show everything you log to NT from your robot code.
 It also has a 2d field view that shows the robot's position on the field.
 You can select keyboards or controllers to control the robot in the simulation.
-
------------------------
