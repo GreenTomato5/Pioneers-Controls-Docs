@@ -5,14 +5,13 @@ Our autonomous approach
 -----------------------------
 
 The autonomous period is a crucial part of every FRC match. During this period, robots operate without any driver input, executing pre-programmed routines to score points. This period can significantly impact a team's performance.
-Our autonomous code is designed to be modular and flexible, allowing us to adapt to different game strategies and conditions. We utilize a combination of WPILib commands, graphical path generation tools, and coordinate-based navigation to create robust and efficient autonomous routines.
 
 WPILib Commands in Autonomous
 -----------------------------
 
 Our autonomous code is the *only* place in our entire codebase where we utilize `WPILib Commands <https://docs.wpilib.org/en/stable/docs/software/commandbased/index.html>`_. This design choice makes a lot of sense for several reasons:
 
-* **Sequential and Parallel Execution:** The command-based programming model in WPILib is inherently designed for orchestrating sequences of actions, which is exactly what an autonomous routine is. We can easily define actions that run sequentially (one after another) or in parallel (at the same time), allowing for complex and efficient autonomous routines.
+* **Sequential Execution:** The command-based programming model in WPILib is inherently designed for orchestrating sequences of actions, which is exactly what an autonomous routine is. We can easily define actions that run sequentially (one after another) or in parallel (at the same time), allowing for complex and efficient autonomous routines.
 * **Interruptibility and State Management:** Commands handle their own state and can be interrupted, which is valuable for robust autonomous programming. If something goes wrong or a new condition is met, commands can be stopped and new ones started.
 * **Readability and Organization:** Breaking down an autonomous routine into individual commands (e.g., ``DriveToSpeakerCommand``, ``ShootNoteCommand``) makes the code much more readable and easier to maintain. Each command encapsulates a specific robot behavior.
 
@@ -30,15 +29,13 @@ Repulsor: Coordinate-Based Autonomous
 
 Recently, we've begun experimenting with `Repulsor <repulsor.html>`_. as an alternative method for autonomous travel. Repulsor offers significant advantages in terms of flexibility and rapid auto generation:
 
-* **Greater Flexibility:** Unlike pre-drawn paths, Repulsor allows us to define autonomous movements simply by providing target coordinates. This is incredibly powerful for scenarios where the exact path might vary or where on-the-fly adjustments are needed.
+* **Greater Flexibility:** Unlike pre-drawn paths, Repulsor allows us to define autonomous movements simply by providing target coordinates. This is good for scenarios where the exact path might vary or where adjustments are needed.
 * **Faster Auto Generation:** Instead of drawing and refining paths, we can generate autonomous routines much more quickly by simply specifying a sequence of coordinates the robot needs to reach. This is particularly useful for adapting to different game strategies.
-* **Dynamic Obstacle Avoidance (Future Potential):** While not fully implemented yet, Repulsor's underlying principles lend themselves to more dynamic obstacle avoidance and reactive navigation, which could be a significant future enhancement to our autonomous capabilities. Essentially, Repulsor handles the low-level control to get the robot from its current position to the desired coordinates, allowing us to focus on the higher-level logic of *where* the robot needs to go.
 
 .. note::
-   It is technically possible to create autonomous routines using a timer, where the robot performs different actions at specific time intervals (e.g., "drive forward for 2 seconds, then turn left for 1 second"). However, this approach is **highly discouraged** and **should not be done**. Timer-based autos are incredibly fragile, susceptible to minor robot variations, battery voltage changes, and field inconsistencies, leading to unreliable and inconsistent performance. Our preferred methods using commands, path generation tools, and Repulsor provide far superior robustness, accuracy, and maintainability.
+   It is technically possible to create autonomous routines using a timer, where the robot performs different actions at specific time intervals (e.g., "drive forward for 2 seconds, then turn left for 1 second"). However, this approach is **highly discouraged** and **should not be done**.
 
-Tools
------------------
+---------
 
 .. toctree::
    :maxdepth: 1
