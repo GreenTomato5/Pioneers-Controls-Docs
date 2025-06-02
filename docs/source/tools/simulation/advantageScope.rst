@@ -38,7 +38,7 @@ Before this guide begins you will have to do a couple things:
 
 3. Open AdvantageScope and navigate to the custom assets folder under help -> show assets folder
 
-4. Create a folder named “Robot_” + whatever you would like the robot to be named in advantage scope. Ex: Robot_Pothole or Robot_Speedbump
+4. Create a folder named “Robot_” + whatever you would like the robot to be named in advantage scope. Eg: Robot_Pothole or Robot_Speedbump
 Drop the CAD files into this folder, make sure they still follow that naming convention
 Your folder should now look like this:
 
