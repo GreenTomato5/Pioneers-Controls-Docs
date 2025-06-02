@@ -10,7 +10,6 @@ There are many tools that use NT to display and change data on the robot. These 
 Dashboards
 ----------------
 We use a variety of dashboards. Some are best for programming and debugging, while others are better suited for driver use during matches. Here are some of the most common dashboards we use:
-----------
 
 .. toctree::
    :maxdepth: 1

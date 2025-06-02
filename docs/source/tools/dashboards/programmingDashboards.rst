@@ -1,5 +1,6 @@
 Programming Dashboards
 ========================
+
 A variety of dashboards are available to help program and debug your robot. We use dashboards to change configuration values on the fly, viisualize data, and get information about the robot's state.
 The most common dashboards we use are:
 - **SmartDashboard**: This is the default dashboard that comes with WPILib. It allows you to visualize data and change configuration values on the fly but it is pretty basic and doesn't look very good. You can learn about is `here <https://docs.wpilib.org/en/stable/docs/software/dashboards/smartdashboard/smartdashboard-intro.html>`_.
