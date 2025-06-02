@@ -72,7 +72,7 @@ Getting started
                 this // Reference to this subsystem to set requirements
         );
 
-.. note::
+.. note:
     We usually build a second manager subsystem for autos ex: AutoManager. This should handle setting up and running the autos.
 
     e. You can create an auto chooser and push it to smartDashboard as shown:
@@ -88,7 +88,8 @@ Getting started
             return autoChooser.getSelected();
         }
     f. You also need to register namedCommands for events in your paths/autos. This MUST be done before creating a PathPlanner path/auto in your code.
-    .. note::
+
+.. note:
         We don't normally use commands so they aren't built into our subsystems. Instead we recommend making a `autoCommands` file and putting commands in there which change subsystems state.
     
     .. code-block:: java
@@ -96,5 +97,6 @@ Getting started
         // Register named commands for events in your paths
         PathPlanner.registerNamedCommand("Intake", <WhateverCommandIsForIntake>);
         // Add more commands as needed
---------
+
+
             
