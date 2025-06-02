@@ -1,6 +1,7 @@
 Elastic Dashboard
 ========================
 Elastic is a dashboard that is used to visualize data and change configuration values on the fly. It is essentially a more polished version of SmartDashboard and is used for both programming and driver dashboards. This is the dashboard we use for our driver dashboards. It has a nice user interface and allows you to create custom dashboards with various widgets to display data in different formats.
+
 .. note::
     You can learn more about Elastic and how to use it `here <https://frc-elastic.gitbook.io/docshttps://frc-elastic.gitbook.io/docs>`_.
 
