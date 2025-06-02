@@ -14,7 +14,8 @@ Getting started
 ----------------
 1.  **Installation**:
     PathPlanner is a standalone application. You can download the latest release from their GitHub page.
-    * **Official GitHub Releases**: `https://github.com/mjansen4857/PathPlanner/releases <https://github.com/mjansen4857/PathPlanner/releases>`_
+    
+    - **Official GitHub Releases**: `https://github.com/mjansen4857/PathPlanner/releases <https://github.com/mjansen4857/PathPlanner/releases>`_
 .. note:
     To get more information on pathPlanner the docs are available  `here <https://pathplanner.dev/home.html/>`_
 
@@ -33,10 +34,11 @@ Getting started
 4. **Using in the code**:
     a. Your paths and autos will be saved as json files in the deploy directory.
     b. In your robot code, you can use the `PathPlanner` library to load and execute paths and/or autos.
-    c. AutoBuilder is a :hover:`static` class that provides methods to load and execute paths.
+    c. AutoBuilder is a static class that provides methods to load and execute paths.
     d. It needs to be configured within your robot code, usually in the Drive subsystems constructor.
+
     .. code-block:: java
-    
+
         RobotConfig config;
         try {
             config = RobotConfig.fromGUISettings();
@@ -69,28 +71,30 @@ Getting started
                 },
                 this // Reference to this subsystem to set requirements
         );
-    .. note::
-        We usually build a second manager subsystem for autos ex: AutoManager. This should handle setting up and running the autos.
+
+.. note::
+    We usually build a second manager subsystem for autos ex: AutoManager. This should handle setting up and running the autos.
+
     e. You can create an auto chooser and push it to smartDashboard as shown:
-        .. code-block:: java
-            autoChooser = AutoBuilder.buildAutoChooser();
+    .. code-block:: java
+        autoChooser = AutoBuilder.buildAutoChooser();
 
-            // Another option that allows you to specify the default auto by its name
-            // autoChooser = AutoBuilder.buildAutoChooser("My Default Auto");
+        // Another option that allows you to specify the default auto by its name
+        // autoChooser = AutoBuilder.buildAutoChooser("My Default Auto");
 
-            SmartDashboard.putData("Auto Chooser", autoChooser);
+        SmartDashboard.putData("Auto Chooser", autoChooser);
 
-            public Command getAutonomousCommand() {
-                return autoChooser.getSelected();
-            }
+        public Command getAutonomousCommand() {
+            return autoChooser.getSelected();
+        }
     f. You also need to register namedCommands for events in your paths/autos. This MUST be done before creating a PathPlanner path/auto in your code.
-        .. note::
-            We don't normally use commands so they aren't built into our subsystems. Instead we recommend making a `autoCommands` file and putting commands in there which change subsystems state.
-        .. code-block:: java
+    .. note::
+        We don't normally use commands so they aren't built into our subsystems. Instead we recommend making a `autoCommands` file and putting commands in there which change subsystems state.
+    
+    .. code-block:: java
 
-            // Register named commands for events in your paths
-            PathPlanner.registerNamedCommand("Intake", <WhateverCommandIsForIntake>);
-            // Add more commands as needed
-
+        // Register named commands for events in your paths
+        PathPlanner.registerNamedCommand("Intake", <WhateverCommandIsForIntake>);
+        // Add more commands as needed
 --------
             
